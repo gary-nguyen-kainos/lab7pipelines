@@ -4,7 +4,7 @@
 		"description": "LoadOrdersFromBlobToSQLPool",
 		"activities": [
 			{
-				"name": "CopyOrdersFromBlobToSQLPool",
+				"name": "Copy Orders blob JSON To SQL",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
