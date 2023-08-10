@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 2_1",
+	"properties": {
+		"content": {
+			"query": "SELECT\n    str(month) + str(year) as MMYYYY, SUM(cases), SUM(deaths)\nFROM\n    OPENROWSET(\n        BULK     'https://pandemicdatalake.blob.core.windows.net/public/curated/covid-19/ecdc_cases/latest/ecdc_cases.parquet',\n        FORMAT = 'parquet'\n    ) AS [result]\nGROUP BY str(month) + str(year)\nORDER BY MMYYYY ASC",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
