@@ -1,0 +1,12 @@
+{
+	"name": "customersDataSQL",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [],
+		"sqlPool": {
+			"referenceName": "gnsqlpoolforpipeline",
+			"type": "SqlPoolReference"
+		}
+	}
+}

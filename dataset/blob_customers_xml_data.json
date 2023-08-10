@@ -1,0 +1,17 @@
+{
+	"name": "blob_customers_xml_data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "mdtest4321blobstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Xml",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "customers"
+			}
+		}
+	}
+}
